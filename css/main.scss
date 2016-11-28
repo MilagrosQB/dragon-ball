@@ -18,7 +18,7 @@ body {
 	.esferas-section-circle{
 		@include on-circle($item-count: 7, $circle-size: 25em, $item-size: 6em); 
 	}
-
+	//Esferas del Dragón
 	.esfera{
 		background-color: $color-esfera;
 		border-radius: $base-tamanio-esfera/2;
@@ -26,7 +26,7 @@ body {
 		height: $base-tamanio-esfera;
 		padding: $base-tamanio-esfera/4;
 	}
-
+	//Esferas del 1 al 7
 		.estrella-1{
 			@include star;
 			@include star-center(25px, 25px); 

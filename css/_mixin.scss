@@ -1,4 +1,5 @@
-@mixin star-center($padding-sides:15px, $padding-tops: 25px){
+@mixin star-center($padding-sides: 15px, $padding-tops: 25px){
+  //Resplandor de las esferas
 	@-webkit-keyframes pulse {
 	  0% { 
       box-shadow:0 0 25px $color-brillo-esfera, inset 0 0 25px $color-brillo-esfera;}
@@ -15,6 +16,7 @@
     -webkit-animation: pulse 2s linear 1s infinite;
 }
 
+//Posición de la sección de esferas
 @mixin on-circle($item-count, $circle-size, $item-size) {
     position: relative;
     width:  $circle-size;
@@ -34,6 +36,7 @@
       $angle: (360 / $item-count);
       $rot: 150;
 
+//Rotación de las esferas
       @for $i from 1 through $item-count {
         &:nth-of-type(#{$i}) {
           transform: 
